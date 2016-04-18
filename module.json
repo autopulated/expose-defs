@@ -1,6 +1,6 @@
 {
   "name": "expose-def",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Expose config values as top-level variables",
   "keywords": [
     "expose",
@@ -15,8 +15,8 @@
   },
   "homepage": "https://github.com/autopulated/prebuild-demo",
   "license": "ISC",
-  "scripts":{
-      "preBuild": "./scripts/processConfig.py"
+  "scripts": {
+    "preBuild": "./scripts/processConfig.py"
   },
   "dependencies": {}
 }
