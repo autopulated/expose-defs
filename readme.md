@@ -4,7 +4,7 @@ This module makes yotta config values accessible as top-level #definitions
 which can be included by #including:
 
 ```C
-#include "expose-config/defs.h"
+#include "expose-defs/defs.h"
 ```
 
 All values defined in objects in the yotta config data which are siblings of a

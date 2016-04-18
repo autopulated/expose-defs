@@ -22,5 +22,5 @@ def generateDefinitions(config):
 with open(os.environ['YOTTA_MERGED_CONFIG_FILE'], 'r') as f:
     merged_config = json.load(f, encoding='utf-8')
     definitions = generateDefinitions(merged_config)
-    with open('./expose-def/defs.h', 'w') as outf:
+    with open('./expose-defs/defs.h', 'w') as outf:
         outf.write(definitions)

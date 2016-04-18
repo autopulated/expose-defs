@@ -1,5 +1,5 @@
 {
-  "name": "expose-def",
+  "name": "expose-defs",
   "version": "1.0.0",
   "description": "Expose config values as top-level variables",
   "keywords": [
