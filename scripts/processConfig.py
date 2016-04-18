@@ -10,7 +10,7 @@ import os
 
 def generateDefinitions(config):
     definitions = ''
-    expose_definitions = '$exposeDef' in config.keys()
+    expose_definitions = config.get('$exposeDef', None)
     for k, v in config.items():
         if isinstance(v, dict):
             definitions += generateDefinitions(v)
