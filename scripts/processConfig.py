@@ -10,11 +10,11 @@ import os
 
 def generateDefinitions(config):
     definitions = ''
-    expose_definitions = config.get('$exposeDef', None)
+    expose_definitions = config.get('$exposeDef')
     for k, v in config.items():
         if isinstance(v, dict):
             definitions += generateDefinitions(v)
-        elif expose_definitions and not k.startswith('$'):
+        if expose_definitions and not k.startswith('$'):
             definitions += '\n#define %s %s' % (k.upper(), v)
     return definitions
 
