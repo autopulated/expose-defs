@@ -1,0 +1,22 @@
+{
+  "name": "expose-def",
+  "version": "0.0.0",
+  "description": "Expose config values as top-level variables",
+  "keywords": [
+    "expose",
+    "definitions",
+    "define",
+    "config"
+  ],
+  "author": "James Crosby <autopulated@gmail.com>",
+  "repository": {
+    "url": "git@github.com:autopulated/prebuild-demo.git",
+    "type": "git"
+  },
+  "homepage": "https://github.com/autopulated/prebuild-demo",
+  "license": "ISC",
+  "scripts":{
+      "preBuild": "./scripts/processConfig.py"
+  },
+  "dependencies": {}
+}
